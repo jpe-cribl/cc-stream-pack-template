@@ -16,17 +16,17 @@ Makefile that wraps the common day-to-day commands.
 
 ```sh
 GH_TOKEN=<org-admin-token> \
-  gh repo create dryvist/cc-edge-<source>-io \
-    --template JacobPEvans-personal/cc-stream-pack-template \
+  gh repo create <owner>/cc-stream-<source>-io \
+    --template <template-owner>/cc-stream-pack-template \
     --public --clone
 
-cd cc-edge-<source>-io
+cd cc-stream-<source>-io
 make install            # installs Node test deps
 nix develop             # enter the dev shell, then: lefthook install
 ```
 
 Org-repo creation needs a token with `Administration: Read & write` on the
-dryvist org (standard user PATs typically can't). `make install` needs Node
+target org (standard user PATs typically can't). `make install` needs Node
 20+ and pnpm 10+. Docker is only needed for `make test`. See
 [`docs/development.md`](docs/development.md) for the dev shell.
 
@@ -99,7 +99,3 @@ Changes here propagate to every downstream pack — tread carefully. See
 ## License
 
 Apache-2.0 — see [`LICENSE`](LICENSE).
-
----
-
-> Part of a [larger ecosystem of ~40 repos](https://docs.jacobpevans.com) — see how it all fits together.
