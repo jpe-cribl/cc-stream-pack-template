@@ -24,12 +24,13 @@ corepack enable pnpm
 ```sh
 git clone https://github.com/dryvist/cc-edge-<pack>-io.git
 cd cc-edge-<pack>-io
-make install            # pnpm install in tests/ (also installs lefthook git hooks)
+make install            # pnpm install in tests/ (test dependencies only)
 ```
 
-`make install` runs the `prepare` script in `tests/package.json`, which
-installs lefthook git hooks at the repo root. Pre-commit Biome auto-format
-fires on every `git commit` going forward.
+Git hooks come from the Nix dev shell, not from `make install`. Enter it
+(`nix develop` or direnv), then run `lefthook install` once per worktree.
+Biome and lefthook come from nixpkgs. Pre-commit Biome auto-format fires on
+every `git commit` going forward.
 
 ## Iterating
 
