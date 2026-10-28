@@ -5,7 +5,6 @@
   "description": "Cribl pack test harness — Vitest-based, scaffolded into every dryvist pack from cc-edge-pack-template.",
   "type": "module",
   "scripts": {
-    "prepare": "cd .. && lefthook install",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",

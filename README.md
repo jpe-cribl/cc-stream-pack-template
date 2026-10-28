@@ -21,7 +21,8 @@ GH_TOKEN=<org-admin-token> \
     --public --clone
 
 cd cc-edge-<source>-io
-make install            # installs Node deps + git hooks
+make install            # installs Node test deps
+nix develop             # enter the dev shell, then: lefthook install
 ```
 
 Org-repo creation needs a token with `Administration: Read & write` on the
