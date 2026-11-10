@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/jpe-cribl/cc-stream-pack-template/compare/v1.0.0...v1.0.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* replace private names with role words ([#40](https://github.com/jpe-cribl/cc-stream-pack-template/issues/40)) ([d60fe06](https://github.com/jpe-cribl/cc-stream-pack-template/commit/d60fe0646e0ab5284510729a7a3a356ac105a921))
+
 ## 1.0.0 (2026-10-28)
 
 
